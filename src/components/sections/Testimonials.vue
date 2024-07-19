@@ -6,34 +6,34 @@
             </div>
             <div class="flex flex-col w-1/3">
                 <h3 class="text-2xl font-bold text-tertiary">Testimonials</h3>
-                <p class="mt-2 w-2/3 text-[#2F2F2F]">Have many related needs, we present a suitable package for you needs.</p>
+                <p class="mt-2 w-2/3 text-[#2F2F2F]">Providing top-notch cleaning services tailored to your needs.</p>
             </div>
         </div>
 
         <div class="flex flex-row w-full px-24 space-x-5 mt-9">
             <TestimonialCard 
-                userName="Celine Dion" 
+                userName="Alex Johnson" 
                 img="user1.png" 
-                job="Cafe Owner" 
-                text="Increase product sales and increase the amount of cash that comes in for further development." 
+                job="Restaurant Owner" 
+                text="The cleaning team did an outstanding job, leaving our space spotless and ready for business every day." 
             />
             <TestimonialCard 
-                userName="Elton John" 
+                userName="Maria Garcia" 
                 img="user2.png" 
-                job="Music Producer" 
-                text="Creating music that touches the soul and brings people together has been my lifelong passion." 
+                job="Office Manager" 
+                text="Their attention to detail is unmatched. Our office space has never looked better!" 
             />
             <TestimonialCard 
-                userName="Adele Adkins" 
+                userName="James Smith" 
                 img="user3.png" 
-                job="Singer-Songwriter" 
-                text="Music is all about connecting with people, and I'm fortunate to be able to do that every day." 
+                job="Homeowner" 
+                text="I'm amazed by the professionalism and the thorough cleaning services provided. Highly recommend!" 
             />
             <TestimonialCard 
-                userName="Chris Martin" 
+                userName="Linda Brown" 
                 img="user2.png" 
-                job="Band Lead" 
-                text="Every concert is a new adventure, a chance to bring joy and music to our fans." 
+                job="Gym Owner" 
+                text="They managed to clean areas I didn't even think were possible to get clean. Fantastic service!" 
             />
         </div>
     </div>
@@ -43,10 +43,10 @@
 import { ref, onMounted } from 'vue';
 import TestimonialCard from '../TestimonialCard.vue';
 
-const currentCount = ref(1);
+const currentCount = ref(1); // Adjusted to reflect the number of satisfied clients
 
 onMounted(() => {
-    const maxCount = 250;
+    const maxCount = 250; 
     const interval = setInterval(() => {
         if (currentCount.value < maxCount) {
             currentCount.value++;
