@@ -3,7 +3,7 @@
         <img src="../assets/images/tick-good.png" class="w-8 h-8" alt="">
         <div class="flex flex-col">
           <h3 class="text-2xl font-bold">{{ title }}</h3>
-          <p class="text-[#2F2F2F]">{{ content }}</p>
+          <p class="text-[#2F2F2F] md:w-full w-4/5">{{ content }}</p>
         </div>
     </div>
 </template>

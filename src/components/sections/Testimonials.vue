@@ -1,16 +1,16 @@
 <template>
     <div class="flex flex-col items-center justify-center w-full bg-secondary py-9">
-        <div class="flex flex-row items-center ml-24 gap-x-72">
-            <div class="w-1/3">
+        <div class="flex flex-col items-center space-y-5 md:space-y-0 md:flex-row md:ml-24 md:gap-x-72">
+            <div class="w-4/5 md:w-1/3">
                 <h2 class="mt-12 text-5xl font-bold"><span class="font-bold text-7xl text-primary">{{ currentCount }} +</span> Satisfied Clients With Our Services</h2>
             </div>
-            <div class="flex flex-col w-1/3">
+            <div class="flex flex-col w-4/5 md:w-1/3">
                 <h3 class="text-2xl font-bold text-tertiary">Testimonials</h3>
-                <p class="mt-2 w-2/3 text-[#2F2F2F]">Providing top-notch cleaning services tailored to your needs.</p>
+                <p class="mt-2  text-[#2F2F2F]">Providing top-notch cleaning services tailored to your needs.</p>
             </div>
         </div>
 
-        <div class="flex flex-row w-full px-24 space-x-5 mt-9">
+        <div class="flex flex-col w-full space-y-4 md:space-y-0 px-9 md:space-x-5 md:px-24 md:flex-row mt-9">
             <TestimonialCard 
                 userName="Alex Johnson" 
                 img="user1.png" 

@@ -1,10 +1,10 @@
 <template>
     <div class="flex flex-col w-full bg-secondary py-9">
       <!-- Carousel Section -->
-      <Carousel class="mt-4 ml-20 mr-20" :value="images" :numVisible="4" :numScroll="1" :responsiveOptions="responsiveOptions" circular :autoplayInterval="3000">
+      <Carousel class="mt-4 ml-5 mr-5 md:mr-20 md:ml-20" :value="images" :numVisible="4" :numScroll="1" :responsiveOptions="responsiveOptions" circular :autoplayInterval="3000">
         <template #item="slotProps">
-            <div class="flex flex-col px-4">
-                <img :src="require('@/assets/images/works/' + slotProps.data.src)" :alt="slotProps.data.alt" class="w-full h-[500px] rounded-md" />
+            <div class="flex flex-col w-full px-4 ">
+                <img :src="require('@/assets/images/works/' + slotProps.data.src)" :alt="slotProps.data.alt" class="md:w-full w-[900px] h-[500px] rounded-md" />
             </div>
         </template>
        </Carousel>

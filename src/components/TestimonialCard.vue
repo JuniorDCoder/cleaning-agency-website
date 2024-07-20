@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-[#F4F6FB] cursor-pointer flex flex-col space-y-4 w-1/3 rounded-lg px-12 py-7 transition duration-300 ease-in-out hover:bg-secondary hover:shadow-lg">
+    <div class="bg-[#F4F6FB] cursor-pointer flex flex-col space-y-4 w-full md:w-1/3 rounded-lg px-12 py-7 transition duration-300 ease-in-out hover:bg-secondary hover:shadow-lg">
 
         <div class="flex flex-row items-center mt-4 space-x-4">
             <img :src="require('@/assets/images/' + img)" alt="" class="w-12 h-12">
